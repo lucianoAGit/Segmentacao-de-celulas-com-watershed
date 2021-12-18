@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 from glob import glob
 import os
 
-# Carrega todos os arquivos .png da pasta
-img_names = glob(os.path.join(os.getcwd(), '*.png'))
+# Carrega todos os arquivos .bmp da pasta
+img_names = glob(os.path.join(os.getcwd(), '*.bmp'))
 
 for fn in img_names:
 

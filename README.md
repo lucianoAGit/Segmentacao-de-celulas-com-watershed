@@ -7,6 +7,9 @@ O tratamento pode ser feito através de quimioterapia, sendo realizada em 4 etap
   
   Outra forma de tratamento que está em ascensão é o transplante de medula óssea (TMO) que pode ser realizado utilizando-se as próprias células do paciente (autólogo) ou utilizando-se células de doadores (alogênicos) compatíveis. O procedimento TMO consiste no paciente receber altas doses de quimioterápicos e posteriormente as células tronco hematopoiéticas do doador serão utilizadas para promover a recuperação hematológica.
 
+# Banco de Dados
+
+  Para a realização deste projeto, foram utilizadas imagens do conjunto de dados “SN-AM Dataset: White Blood cancer dataset of B-ALL and MM for stain normalization”, do The Cancer Imaging Archive (TCIA). As 29 imagens foram obtidas utilizando-se um microscópio Nikon Eclipse-200 com aumento de 1000x através de câmera digital, resultando em arquivos de formato BMP (Bitmap bruto) de tamanho 2560x1920 pixels.
 
 # Segmentação de células cancerígenas com Watershed
 
@@ -16,7 +19,3 @@ O tratamento pode ser feito através de quimioterapia, sendo realizada em 4 etap
 # Geração da imagem final
 	
   Após a etapa da segmentação, para obter o resultado final da segmentação foi utilizado um operador Bitwise AND para percorrer toda a matriz de pixels da imagem original da base de dados, comparando-a com a máscara resultante do Watershed. A operação Bitwise AND compara dois valores de pixels utilizando suas representações binárias. Desse modo, é retornado um novo valor, para formar esse valor de retorno cada bit é comparado, retornando true quando ambos os bits forem iguais a 1, caso contrário retorna false. 
-  
-# Banco de Dados
-
-  Para a realização deste projeto, foram utilizadas imagens do conjunto de dados “SN-AM Dataset: White Blood cancer dataset of B-ALL and MM for stain normalization”, do The Cancer Imaging Archive (TCIA). As 29 imagens foram obtidas utilizando-se um microscópio Nikon Eclipse-200 com aumento de 1000x através de câmera digital, resultando em arquivos de formato BMP (Bitmap bruto) de tamanho 2560x1920 pixels.

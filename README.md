@@ -6,3 +6,7 @@
 # Geração da imagem final
 	
   Após a etapa da segmentação, para obter o resultado final da segmentação foi utilizado um operador Bitwise AND para percorrer toda a matriz de pixels da imagem original da base de dados, comparando-a com a máscara resultante do Watershed. A operação Bitwise AND compara dois valores de pixels utilizando suas representações binárias. Desse modo, é retornado um novo valor, para formar esse valor de retorno cada bit é comparado, retornando true quando ambos os bits forem iguais a 1, caso contrário retorna false. 
+  
+# Banco de Dados
+
+  Para a realização deste projeto, foram utilizadas imagens do conjunto de dados “SN-AM Dataset: White Blood cancer dataset of B-ALL and MM for stain normalization”, do The Cancer Imaging Archive (TCIA). As 29 imagens foram obtidas utilizando-se um microscópio Nikon Eclipse-200 com aumento de 1000x através de câmera digital, resultando em arquivos de formato BMP (Bitmap bruto) de tamanho 2560x1920 pixels.
